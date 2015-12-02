@@ -44,10 +44,10 @@ class m140526_193056_create_module_tbl extends Migration
         ], $tableOptions);
 
         // Indexes
-        $this->createIndex('status_id', '{{%blogs}}', 'status_id');
-        $this->createIndex('views', '{{%blogs}}', 'views');
-        $this->createIndex('created_at', '{{%blogs}}', 'created_at');
-        $this->createIndex('updated_at', '{{%blogs}}', 'updated_at');
+        $this->createIndex('idx_blogs_status_id', '{{%blogs}}', 'status_id');
+        $this->createIndex('idx_blogs_views', '{{%blogs}}', 'views');
+        $this->createIndex('idx_blogs_created_at', '{{%blogs}}', 'created_at');
+        $this->createIndex('idx_blogs_updated_at', '{{%blogs}}', 'updated_at');
     }
 
     /**
